@@ -1,0 +1,666 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+body {
+    margin: 0px;
+    font-family: "Josefin Sans", sans-serif;
+    background-color: black;
+}
+
+.nav {
+    background-color:#FFF0E5;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid black 4px;
+}
+
+.linknav {
+    text-decoration: none;
+    margin-right: 40px;
+    margin-left: 40px;
+    color: black;
+    font-size: xx-large;
+    text-align: center;
+}
+
+a:hover {
+    background-color: #EDD3C4;
+    transition: 0.3 ease;
+    border-radius: 5px;
+    transform: scale(1.05);
+}
+
+.front {
+    border-bottom: solid #2D3142 4px;
+    box-sizing: border-box;
+}
+
+.logo {
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    box-sizing: border-box;
+    column-gap: 150px;
+}
+
+img.profilephoto {
+    margin-top: 140px;
+    margin-bottom: 60px;
+    margin-left: 140px;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.description {
+    display: flex;
+    justify-content: right;
+    flex-flow: column;
+    max-width: 100%;
+    margin-top: 60px;
+}
+
+h1 {
+    font-size: 120px;
+    letter-spacing: 3px;
+    margin-top: 100px;
+    color: #fff0e5;
+    display: flex;
+    max-width: 100%;
+}
+
+.desc2 {
+    font-size: 40px;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: right;
+    color: #fff0e5;
+    margin-bottom: 125px;
+    max-width: 100%;
+}
+
+.aboutme {
+    background-color: #2D3142;
+    color: #fff0e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutme-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 70%;
+    margin-top: 20px;
+}
+
+.about , .education {
+    font-size: 40px;
+    text-align: center;
+    color: #fff0e5;
+}
+
+.info {
+    text-align: center;
+    color: #fff0e5;
+    font-size: 25px;
+    line-height: 40px;
+}
+
+#downloadCV {
+    padding: 10px 20px;
+    background-color: #EDD3C4;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color 0.3s, transform 0.3s;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 70px;
+    margin-top: 50px;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+#downloadCV:hover {
+    background-color: #FFF0E5;
+    color: #2D3142;
+    transform: scale(1.05); 
+}
+
+#downloadCV:active {
+    background-color: black;
+    color: #FFF0E5;
+    transform: scale(1);
+}
+
+.skillset, .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff0e5;
+}
+
+.skillset {
+    background-color: #fff0e5;
+}
+
+.skillset-container {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.skillset-container li {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.skillset-container ul {
+    word-spacing: 30px;
+    padding: 20px 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.image {
+    box-shadow: 5px 5px 5px 5px #92898A;
+    transition: 0.3s ease;
+    border-radius: 5px;
+}
+
+.skillset h3 {
+    font-size: 40px;
+    text-align: center;
+    color: black;
+    margin-bottom: 60px;
+}
+
+.skillset p {
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    line-height: 40px;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    max-width: 1063px; 
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+section h2 {
+    color: #FFF0E5;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 70px;
+}
+
+
+.project-box {
+    background-color: #2D3142;
+    border: 1px solid #FFF0E5;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #fff0e5;
+    padding: 20px;
+    margin-top: 40px;
+    width: calc(50% - 20px);
+    height: 500px;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative; 
+    
+}
+
+.project-box h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #FFF0E5; 
+}
+
+.project-box p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #FFF0E5;
+    line-height: 30px;
+}
+
+.project-box .button-group {
+    display: flex;
+    justify-content: center;
+}
+
+.project-box button,
+.project-box .visit-site-link {
+    background-color: #2D3142;
+    color: white;
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center; 
+}
+
+.project-box button:hover,
+.project-box .visit-site-link:hover {
+    background-color: #92898A;
+}
+
+.project-box .visit-site-link {
+    width: 160px;
+    height: 60px; 
+    line-height: 60px; 
+    position: relative; 
+    
+    z-index: 2; 
+}
+
+.project-box button {
+    z-index: 1; 
+}
+
+.skillset-container {
+    width: 70%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.footerSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.contactform {
+    background-color: #fff0e5;
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.contactform:hover {
+    box-shadow: 0 0 30px #92898A;
+    transition: 0.3s ease;
+    border-radius: 5px;
+}
+
+.contactform h3 {
+    margin-top: 0;
+    color: #2D3142;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: -5px;
+}
+
+.contactform h4 {
+    color: #2D3142;
+    text-align: center;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.contactform form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform label {
+    margin-bottom: 5px;
+    color: #2D3142;
+}
+
+.contactform input[type="text"],
+.contactform textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    width: calc(100% - 22px);
+}
+
+.contactform input[type="email"],
+.contactform textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    width: calc(100% - 22px);
+}
+
+.contactform textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.contactform input[type="submit"] {
+    padding: 10px 15px;
+    background-color: #2D3142;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.contactform input[type="submit"]:hover {
+    background-color: #92898A;
+    color: black;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.logo-container img {
+    justify-self: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.icon-container {
+    background-color: #fff0e5;
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    cursor: pointer;
+}
+
+.icon img:hover {
+    box-shadow: 5px 5px 5px 5px #92898A;
+    transition: 0.3s ease;
+    border-radius: 5px;
+}
+
+
+/* ----- Media Queries ----- */
+
+/* Tablet styles */
+@media (max-width: 1024px) {
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    
+    .nav {
+        flex-direction: row;
+        height: auto;
+        padding: 10px 0;
+        justify-content: left;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .linknav {
+        margin: 10px 30px;
+        font-size: large;
+    }
+
+    .logo {
+        display: flex;
+        flex-wrap: no-wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        column-gap: 0;
+    }
+
+    img.profilephoto {
+        margin: 0;
+    }
+
+    .description {
+        box-sizing: border-box;
+        width: 100%;
+    } 
+
+    h1 {
+        font-size: 60px;
+        justify-content: right;
+        margin-right: 40px;
+    }
+
+    .desc2 {
+        font-size: 30px;
+        justify-content: right;
+        margin-right: 40px;
+    }
+
+    .aboutme {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    h3.about {
+        font-size: 30px;
+    }
+
+    h3.education {
+        font-size: 30px;
+    }
+
+    h3.skl {
+        font-size: 30px;
+    }
+
+    .aboutme-container, 
+    .skillset-container, 
+    .footer-container, 
+    .contactFormSection {
+        padding: 20px;
+        width: calc(100% - 60px);
+        margin: 0 auto; 
+        box-sizing: border-box;
+        height: 100%;
+    }
+
+    p.info {
+        font-size: 20px;
+    }
+
+    .projects-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .project-box {
+        width: 70%;
+        margin: 20px;
+        height: auto;
+    }
+
+    .project-box h2 {
+        font-size: 25px;
+    }
+
+    .project-box p {
+        font-size: 18px;
+    }
+
+    .project-box .button-group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-box button,
+    .project-box .visit-site-link {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    .contactform {
+        max-width: 80%;
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    .contactform form label,
+    .contactform form input,
+    .contactform form textarea,
+    .contactform form input[type="submit"] {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-container img {
+        width: 150px;
+        height: auto;
+    }
+
+    .icon-container {
+        flex-direction: row;
+    }
+
+    .icon {
+        padding: 10px;
+    }
+}
+
+
+/* Mobile styles */
+@media (max-width: 480px) {
+    .nav {
+        flex-direction: row;
+        height: auto;
+        padding: 10px 0px;
+        justify-content: center;
+    }
+
+    .linknav {
+        margin: 5px 10px;
+        font-size: medium;
+    }
+
+    div.logo {
+        flex-direction: column;
+        align-items: center;
+        /* margin: 20px; */
+        width: 100%;
+    }
+
+    .description {
+        margin-left: 0;
+    }
+
+    .logo img {
+        display: none;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    p.info {
+        font-size: 20px;
+    }
+
+    .desc2 {
+        font-size: 18px;
+    }
+
+    .aboutme-container, .skillset-container, .footer-container, .contactFormSection {
+        padding: 10px;
+    }
+
+    p.aboutskillset {
+        font-size: 20px;
+    }
+
+   .image {
+        padding: 5px 5px 5px 5px;
+   }
+
+   .projects-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        padding: auto;
+   }
+
+   .project-box {
+        width: 95%;
+        height: 100%;
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+   }
+
+    .footerSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .contactform {
+        max-width: 95%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .contactform form label,
+    .contactform form input,
+    .contactform form textarea,
+    .contactform form input[type="submit"] {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
